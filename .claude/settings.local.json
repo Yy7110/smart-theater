@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(mvn compile:*)",
+      "Bash(curl -s http://localhost:8070/api/public/shows?page=1)",
+      "Bash(size=6 2>&1)",
+      "Bash(curl:*)",
+      "Bash(node -e \"let d='';process.stdin.on\\('data',c=>d+=c\\);process.stdin.on\\('end',\\(\\)=>console.log\\(JSON.parse\\(Buffer.from\\(d.trim\\(\\),'base64'\\).toString\\(\\)\\)\\)\\)\")",
+      "Bash(redis-cli ping:*)",
+      "Bash(tasklist)",
+      "Bash(wmic process:*)",
+      "Bash(taskkill:*)",
+      "Bash(mvn spring-boot:run -q)",
+      "Bash(mvn spring-boot:run)",
+      "Bash(node:*)",
+      "Bash(mysql:*)",
+      "Bash(netstat -ano)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git rm *)"
+    ]
+  }
+}
